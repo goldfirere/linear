@@ -72,9 +72,9 @@ import Linear.Vector
 -- | An affine space is roughly a vector space in which we have
 -- forgotten or at least pretend to have forgotten the origin.
 --
--- > a .+^ (b .-. a)  =  b@
--- > (a .+^ u) .+^ v  =  a .+^ (u ^+^ v)@
--- > (a .-. b) ^+^ v  =  (a .+^ v) .-. q@
+-- > a .+^ (b .-. a)  =  b
+-- > (a .+^ u) .+^ v  =  a .+^ (u ^+^ v)
+-- > (a .-. b) ^+^ v  =  (a .+^ v) .-. q
 class Additive (Diff p) => Affine p where
   type Diff p :: * -> *
 
